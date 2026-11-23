@@ -1,0 +1,31 @@
+name: WindowSheetDemo
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "15.0"
+targets:
+  WindowSheetDemo:
+    type: application
+    platform: iOS
+    sources:
+      - WindowSheetDemo
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.WindowSheetDemo
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+    info:
+      path: WindowSheetDemo/Info.plist
+      properties:
+        CFBundleDisplayName: SheetDemo
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+          UISceneConfigurations:
+            UIWindowSceneSessionRoleApplication:
+              - UISceneConfigurationName: Default Configuration
+                UISceneDelegateClassName: $(PRODUCT_MODULE_NAME).SceneDelegate

@@ -1,0 +1,9 @@
+appId: com.example.WindowSheetDemo
+---
+# Opens the sheet and leaves it on screen. Run it with `--driver wda`, then dump the hierarchy with each driver.
+- tapOn:
+    id: "^sheet_trigger_switch$"
+- extendedWaitUntil:
+    visible:
+      id: "^sheet_title_label$"
+    timeout: 15000
